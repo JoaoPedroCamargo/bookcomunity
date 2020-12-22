@@ -29,8 +29,7 @@
         }
       ],
       "no-console": "off",
-      "prettier/prettier": "error",
-      "class-methods-use-this": "off"
+      "prettier/prettier": "error"
     },
     "settings": {
       "import/resolver": {
