@@ -24,7 +24,7 @@ class User {
   password: string;
 
   @Column()
-  age: string;
+  age: Date;
 
   @Column()
   avatar: string;

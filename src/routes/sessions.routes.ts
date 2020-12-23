@@ -18,7 +18,10 @@ sessionsRouter.post('/', async (request, response) => {
     const userWithoutPassword = {
       id: user.id,
       name: user.name,
+      nickname: user.nickname,
       email: user.email,
+      age: user.age,
+      avatar: user.avatar,
     };
 
     return response.json({ userWithoutPassword, token });
