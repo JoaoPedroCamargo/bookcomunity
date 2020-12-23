@@ -1,4 +1,5 @@
 import { getRepository } from 'typeorm';
+
 import User from '../models/User';
 
 interface Request {
@@ -19,7 +20,9 @@ class CreateUserService {
   }: Request): Promise<User> {
     const usersRepository = getRepository(User);
 
-    const checkUserExists = await usersRepository.findOne({ where: { email } });
+    const checkUserExists = await usersRepository.findOne({
+      where: { email },
+    });
 
     if (checkUserExists) {
       throw new Error('Email adress already used.');
