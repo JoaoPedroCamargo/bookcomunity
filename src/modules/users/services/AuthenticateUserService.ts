@@ -4,6 +4,8 @@ import { sign } from 'jsonwebtoken';
 
 import User from '../infra/typeorm/entities/User';
 
+console.log('blabla');
+
 interface Request {
   email: string;
   password: string;
