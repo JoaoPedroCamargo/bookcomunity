@@ -20,6 +20,7 @@
     ],
     "rules": {
       "class-methods-use-this": "off",
+      "no-useless-constructor": "off",
       "camelcase": "off",
       "import/extensions": [
         "error",
@@ -29,7 +30,14 @@
         }
       ],
       "no-console": "off",
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": "interface",
+          "prefix": ["I"],
+          "format": ["PascalCase"]
+        }]
     },
     "settings": {
       "import/resolver": {
