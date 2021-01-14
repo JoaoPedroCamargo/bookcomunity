@@ -2,7 +2,7 @@ import { getRepository } from 'typeorm';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 
-import User from '../models/User';
+import User from '../infra/typeorm/entities/User';
 
 interface Request {
   email: string;
